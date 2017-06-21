@@ -1,30 +1,41 @@
 import UIKit
 
-/* Ensure the returned value is Swift 3.0 string (in hex) as opposed to char array pointer  */
-/* This uses the strdup function from the C standard library to create a copy of each string */
-/******* https://tools.ietf.org/html/rfc4868  sha256_hmac :: Test Vectors from NIST *****/
-
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    var datamanager: DataManager!
+    @IBOutlet weak var openssl_test_btn: UIButton!
+    @IBOutlet weak var openssl_test_lbl: UILabel!
+    @IBOutlet weak var http_test_lbl: UILabel!
+    @IBOutlet weak var https_test_lbl: UILabel!
+    @IBOutlet weak var https_cert_test_lbl: UILabel!
+    
+    @IBAction func openssl_button(_ sender: Any) {
         
-        super.viewDidLoad()
-        test_openssl_working()
+        if datamanager.test_openssl_working() == true {
+            openssl_test_lbl.text = "✅"
+        } else {openssl_test_lbl.text = "⛔️"}
+        
+    }
+    
+    @IBAction func http_button(_ sender: Any) {
+        if datamanager.http_libcurl_working() == true {
+            http_test_lbl.text = "✅"
+        } else {http_test_lbl.text = "⛔️"}
+        
     }
 
-    func test_openssl_working() {
-        
-        var plaintext: String = "Hi There" /* ASCII ingrediants */
-        var size_of_plaintext: Int = plaintext.characters.count
-        
-        let hmac_output = String(cString: generate_sha256_hmac(strdup(plaintext), &size_of_plaintext))
-        
-        let nist_sha256_hmac_test_answer = "b0344c61d8db38535ca8afceaf0bf12b881dc200c9833da726e9376c2e32cff7"
-        
-        // XCTAssertEqual(hmac_output, nist_sha256_hmac_test_answer)
-        
-        if hmac_output == nist_sha256_hmac_test_answer {
-            print("NIST Test - HMAC-SHA256 working ✅")
-        }
+    @IBAction func https_button(_ sender: Any) {
+        if datamanager.https_libcurl_working() == true {
+            https_test_lbl.text = "✅"
+        } else {https_test_lbl.text = "⛔️"}
+    }
+
+    @IBAction func https_pinning_button(_ sender: Any) {
+        https_cert_test_lbl.text = "TBD"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        datamanager = DataManager()
     }
 }

@@ -1,5 +1,9 @@
 #include "generate_hmac.h"
 
+/* Ensure the returned value is Swift 3.0 string (in hex) as opposed to char array pointer  */
+/* This uses the strdup function from the C standard library to create a copy of each string */
+/******* https://tools.ietf.org/html/rfc4868  sha256_hmac :: Test Vectors from NIST *****/
+
 static void get_hmac_key(unsigned char *key_ptr, size_t *key_size) {
     
     /* TODO: Replace this 20 char NIST Test Vector Key  */
