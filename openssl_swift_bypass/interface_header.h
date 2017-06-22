@@ -7,4 +7,5 @@
 
 bool basic_http_get();
 bool basic_https_get();
+bool https_pinning_get();
 #endif /* interface_header_h */

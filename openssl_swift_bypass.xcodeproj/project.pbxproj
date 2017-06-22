@@ -10,21 +10,17 @@
 		97058D9C1EFA6E6D00474B2C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97058D9B1EFA6E6D00474B2C /* libcurl.a */; };
 		97058D9E1EFA6F6A00474B2C /* dataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97058D9D1EFA6F6A00474B2C /* dataManager.swift */; };
 		97058DA01EFA983800474B2C /* https_get.c in Sources */ = {isa = PBXBuildFile; fileRef = 97058D9F1EFA983800474B2C /* https_get.c */; };
+		97058DA21EFABA5300474B2C /* https_pinning.c in Sources */ = {isa = PBXBuildFile; fileRef = 97058DA11EFABA5300474B2C /* https_pinning.c */; };
 		971844701EE1A94C000EBDB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718446F1EE1A94C000EBDB9 /* AppDelegate.swift */; };
 		971844721EE1A94C000EBDB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971844711EE1A94C000EBDB9 /* ViewController.swift */; };
 		971844751EE1A94C000EBDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971844731EE1A94C000EBDB9 /* Main.storyboard */; };
 		971844771EE1A94C000EBDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971844761EE1A94C000EBDB9 /* Assets.xcassets */; };
 		9718447A1EE1A94C000EBDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971844781EE1A94C000EBDB9 /* LaunchScreen.storyboard */; };
-		971844881EE1F6DE000EBDB9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971844871EE1F6DE000EBDB9 /* libcrypto.a */; };
-		9718448A1EE1F6E6000EBDB9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971844891EE1F6E6000EBDB9 /* libssl.a */; };
 		971844901EE1FBB3000EBDB9 /* orange_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 9718448E1EE1FBB3000EBDB9 /* orange_tree.c */; };
-		971844931EE1FDE8000EBDB9 /* generate_hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 971844911EE1FDE8000EBDB9 /* generate_hmac.c */; };
 		979474191EE5A83F00B7062D /* basic_get.c in Sources */ = {isa = PBXBuildFile; fileRef = 979474171EE5A83F00B7062D /* basic_get.c */; };
-		BD0E24E8ABEFD9EB8DBB7E68 /* Pods_openssl_swift_bypass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94F876E47592556656CE0391 /* Pods_openssl_swift_bypass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		94F876E47592556656CE0391 /* Pods_openssl_swift_bypass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_openssl_swift_bypass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97058D901EFA6E6D00474B2C /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
 		97058D911EFA6E6D00474B2C /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
 		97058D921EFA6E6D00474B2C /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
@@ -38,6 +34,7 @@
 		97058D9B1EFA6E6D00474B2C /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
 		97058D9D1EFA6F6A00474B2C /* dataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataManager.swift; sourceTree = "<group>"; };
 		97058D9F1EFA983800474B2C /* https_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = https_get.c; sourceTree = "<group>"; };
+		97058DA11EFABA5300474B2C /* https_pinning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = https_pinning.c; sourceTree = "<group>"; };
 		9718446C1EE1A94C000EBDB9 /* openssl_swift_bypass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openssl_swift_bypass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9718446F1EE1A94C000EBDB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		971844711EE1A94C000EBDB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,13 +47,8 @@
 		971844891EE1F6E6000EBDB9 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Pods/OpenSSL-Universal/lib-ios/libssl.a"; sourceTree = "<group>"; };
 		9718448E1EE1FBB3000EBDB9 /* orange_tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = orange_tree.c; sourceTree = "<group>"; };
 		9718448F1EE1FBB3000EBDB9 /* orange_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orange_tree.h; sourceTree = "<group>"; };
-		971844911EE1FDE8000EBDB9 /* generate_hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = generate_hmac.c; sourceTree = "<group>"; };
-		971844921EE1FDE8000EBDB9 /* generate_hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = generate_hmac.h; sourceTree = "<group>"; };
-		979474121EE59E0800B7062D /* Pods_openssl_swift_bypass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_openssl_swift_bypass.framework; path = "../../Library/Developer/Xcode/DerivedData/openssl_swift_bypass-fzbrwoxthydvqcbsnucrxbpgvdvf/Build/Products/Debug-iphonesimulator/Pods_openssl_swift_bypass.framework"; sourceTree = "<group>"; };
 		979474171EE5A83F00B7062D /* basic_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_get.c; sourceTree = "<group>"; };
 		979474181EE5A83F00B7062D /* interface_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interface_header.h; sourceTree = "<group>"; };
-		BB4A3AE854C4024C81DC0599 /* Pods-openssl_swift_bypass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openssl_swift_bypass.release.xcconfig"; path = "Pods/Target Support Files/Pods-openssl_swift_bypass/Pods-openssl_swift_bypass.release.xcconfig"; sourceTree = "<group>"; };
-		F8FF3B4B5159DC88A8473BDB /* Pods-openssl_swift_bypass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-openssl_swift_bypass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-openssl_swift_bypass/Pods-openssl_swift_bypass.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,32 +56,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD0E24E8ABEFD9EB8DBB7E68 /* Pods_openssl_swift_bypass.framework in Frameworks */,
 				97058D9C1EFA6E6D00474B2C /* libcurl.a in Frameworks */,
-				971844881EE1F6DE000EBDB9 /* libcrypto.a in Frameworks */,
-				9718448A1EE1F6E6000EBDB9 /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D2C4215AA5F019E648A326D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F8FF3B4B5159DC88A8473BDB /* Pods-openssl_swift_bypass.debug.xcconfig */,
-				BB4A3AE854C4024C81DC0599 /* Pods-openssl_swift_bypass.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		763C78CA3A83F55C3B39C10A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				979474121EE59E0800B7062D /* Pods_openssl_swift_bypass.framework */,
 				971844891EE1F6E6000EBDB9 /* libssl.a */,
 				971844871EE1F6DE000EBDB9 /* libcrypto.a */,
-				94F876E47592556656CE0391 /* Pods_openssl_swift_bypass.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,7 +119,6 @@
 			children = (
 				9718446E1EE1A94C000EBDB9 /* openssl_swift_bypass */,
 				9718446D1EE1A94C000EBDB9 /* Products */,
-				0D2C4215AA5F019E648A326D /* Pods */,
 				763C78CA3A83F55C3B39C10A /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -161,7 +138,6 @@
 				979474001EE594A300B7062D /* Swift */,
 				971844941EE1FF2B000EBDB9 /* C_Splashscreen */,
 				9794741A1EE5A84500B7062D /* C_libcurl_GET */,
-				971844951EE1FF39000EBDB9 /* C_hmac */,
 				971844761EE1A94C000EBDB9 /* Assets.xcassets */,
 				971844731EE1A94C000EBDB9 /* Main.storyboard */,
 				971844781EE1A94C000EBDB9 /* LaunchScreen.storyboard */,
@@ -180,15 +156,6 @@
 			name = C_Splashscreen;
 			sourceTree = "<group>";
 		};
-		971844951EE1FF39000EBDB9 /* C_hmac */ = {
-			isa = PBXGroup;
-			children = (
-				971844911EE1FDE8000EBDB9 /* generate_hmac.c */,
-				971844921EE1FDE8000EBDB9 /* generate_hmac.h */,
-			);
-			name = C_hmac;
-			sourceTree = "<group>";
-		};
 		979474001EE594A300B7062D /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +171,7 @@
 			children = (
 				979474171EE5A83F00B7062D /* basic_get.c */,
 				97058D9F1EFA983800474B2C /* https_get.c */,
+				97058DA11EFABA5300474B2C /* https_pinning.c */,
 				979474181EE5A83F00B7062D /* interface_header.h */,
 			);
 			name = C_libcurl_GET;
@@ -216,12 +184,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9718447E1EE1A94C000EBDB9 /* Build configuration list for PBXNativeTarget "openssl_swift_bypass" */;
 			buildPhases = (
-				CBD5FF1CE37D8C74D1053F6F /* [CP] Check Pods Manifest.lock */,
 				971844681EE1A94C000EBDB9 /* Sources */,
 				971844691EE1A94C000EBDB9 /* Frameworks */,
 				9718446A1EE1A94C000EBDB9 /* Resources */,
-				97C108BCAEE2B2E051B97624 /* [CP] Embed Pods Frameworks */,
-				7C65B328EB9E58280392060C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,54 +246,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		7C65B328EB9E58280392060C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openssl_swift_bypass/Pods-openssl_swift_bypass-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97C108BCAEE2B2E051B97624 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-openssl_swift_bypass/Pods-openssl_swift_bypass-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CBD5FF1CE37D8C74D1053F6F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		971844681EE1A94C000EBDB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -336,9 +253,9 @@
 			files = (
 				971844901EE1FBB3000EBDB9 /* orange_tree.c in Sources */,
 				979474191EE5A83F00B7062D /* basic_get.c in Sources */,
-				971844931EE1FDE8000EBDB9 /* generate_hmac.c in Sources */,
 				971844721EE1A94C000EBDB9 /* ViewController.swift in Sources */,
 				971844701EE1A94C000EBDB9 /* AppDelegate.swift in Sources */,
+				97058DA21EFABA5300474B2C /* https_pinning.c in Sources */,
 				97058D9E1EFA6F6A00474B2C /* dataManager.swift in Sources */,
 				97058DA01EFA983800474B2C /* https_get.c in Sources */,
 			);
@@ -461,7 +378,6 @@
 		};
 		9718447F1EE1A94C000EBDB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FF3B4B5159DC88A8473BDB /* Pods-openssl_swift_bypass.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -476,7 +392,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/OpenSSL-Universal/lib-ios",
 					"$(PROJECT_DIR)/openssl_swift_bypass/libcurl-ios-dist/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.youdog.openssl-swift-bypass";
@@ -489,7 +404,6 @@
 		};
 		971844801EE1A94C000EBDB9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB4A3AE854C4024C81DC0599 /* Pods-openssl_swift_bypass.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -504,7 +418,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/OpenSSL-Universal/lib-ios",
 					"$(PROJECT_DIR)/openssl_swift_bypass/libcurl-ios-dist/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.youdog.openssl-swift-bypass";
