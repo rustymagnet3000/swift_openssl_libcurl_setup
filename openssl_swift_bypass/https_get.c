@@ -10,9 +10,9 @@ bool basic_https_get()
     curl = curl_easy_init();
     if(curl) {
         curl_easy_setopt(curl, CURLOPT_URL, "https://example.com/");
-        
+              
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, false);
       
-        /* Perform the request, res will get the return code */
         res = curl_easy_perform(curl);
         /* Check for errors */
         if(res != CURLE_OK){
