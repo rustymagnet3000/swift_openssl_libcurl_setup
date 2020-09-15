@@ -1,18 +1,5 @@
 import UIKit
 
-struct Important_Person {
-    var title: String
-    var firstname: String
-    var password: String
-    
-    init(firstname: String){
-        self.title = "Doctor"
-        self.firstname = firstname
-        self.password = "secret_password"
-    }
-}
-
-var global_var = "happy secret outside of a class"
 
 class YDViewController: UIViewController {
 
@@ -26,6 +13,7 @@ class YDViewController: UIViewController {
     @IBAction func openssl_button(_ sender: Any) {
         
         if datamanager.test_openssl_working() == true {
+
             openssl_test_lbl.text = "✅"
         } else {openssl_test_lbl.text = "⛔️"}
     }
@@ -52,7 +40,5 @@ class YDViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         datamanager = DataManager()
-        var person = Important_Person(firstname: "Bob")
-
     }
 }
