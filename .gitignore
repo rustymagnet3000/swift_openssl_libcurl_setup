@@ -1,1 +1,4 @@
-curl-7.54.0
+## Avoid uploading libCurl build folder and static library
+*.framework/
+*.a
+curl-7.*

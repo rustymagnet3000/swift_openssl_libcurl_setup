@@ -15,7 +15,6 @@ class YDViewController: UIViewController {
     @IBAction func openssl_button(_ sender: Any) {
         
         if datamanager.test_openssl_working() == true {
-
             openssl_test_lbl.text = "✅"
         } else {openssl_test_lbl.text = "⛔️"}
     }

@@ -2,8 +2,9 @@ import Foundation
 
 class DataManager {
 
+    
     internal func test_openssl_working()-> Bool {
-        /** stubbed out for now **/
+        ydversion()
         return true
     }
     

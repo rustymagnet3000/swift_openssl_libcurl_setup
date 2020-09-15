@@ -20,55 +20,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-hu-JXb">
-                                <rect key="frame" x="91.5" y="228.5" width="192" height="210"/>
+                                <rect key="frame" x="108" y="228.5" width="159" height="210"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3sn-e5-bFb">
-                                        <rect key="frame" x="52" y="0.0" width="140" height="30"/>
+                                        <rect key="frame" x="35" y="0.0" width="124" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B84-Pe-Rgk">
-                                                <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
-                                                <state key="normal" title="Test OpenSSL"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
+                                                <state key="normal" title="Version info"/>
                                                 <connections>
                                                     <action selector="openssl_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQt-bx-fRY"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-Q7-rJa">
-                                                <rect key="frame" x="117" y="5" width="23" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RvU-tf-EqU">
-                                        <rect key="frame" x="77" y="60" width="115" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keE-WG-dbw">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
-                                                <state key="normal" title="Test HTTP"/>
-                                                <connections>
-                                                    <action selector="http_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5f-de-rqU"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-BK-Dfl">
-                                                <rect key="frame" x="92" y="5" width="23" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-op-0cb">
-                                        <rect key="frame" x="68" y="120" width="124" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAA-cb-Rt9">
-                                                <rect key="frame" x="0.0" y="0.0" width="81" height="30"/>
-                                                <state key="normal" title="Test HTTPS"/>
-                                                <connections>
-                                                    <action selector="https_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gs0-cb-lmW"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-9x-RlA">
                                                 <rect key="frame" x="101" y="5" width="23" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -76,18 +40,54 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RvU-tf-EqU">
+                                        <rect key="frame" x="21" y="60" width="138" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keE-WG-dbw">
+                                                <rect key="frame" x="0.0" y="0.0" width="95" height="30"/>
+                                                <state key="normal" title="HTTP request"/>
+                                                <connections>
+                                                    <action selector="http_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5f-de-rqU"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGU-BK-Dfl">
+                                                <rect key="frame" x="115" y="5" width="23" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-op-0cb">
+                                        <rect key="frame" x="11" y="120" width="148" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAA-cb-Rt9">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="30"/>
+                                                <state key="normal" title="HTTPS request"/>
+                                                <connections>
+                                                    <action selector="https_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gs0-cb-lmW"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-9x-RlA">
+                                                <rect key="frame" x="125" y="5" width="23" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tan-F5-ihn">
-                                        <rect key="frame" x="0.0" y="180" width="192" height="30"/>
+                                        <rect key="frame" x="0.0" y="180" width="159" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLc-tf-6kR">
-                                                <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
-                                                <state key="normal" title="Test HTTPS + pinning"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                                <state key="normal" title="HTTPS + pinning"/>
                                                 <connections>
                                                     <action selector="https_pinning_button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGP-Hy-wtP"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-XQ-QWx">
-                                                <rect key="frame" x="169" y="5" width="23" height="20.5"/>
+                                                <rect key="frame" x="136" y="5" width="23" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
