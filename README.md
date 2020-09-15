@@ -1,14 +1,14 @@
-## Create http requests using LibCurl and OpenSSL for Crypto and SSL
-
-#### Why?
-Setting up a basic HTTP, HTTPS and HTTP + cert pinning with libCurl.  OpenSSL provided the SSL piece not Apple's Secure Transport libraries.
+## Using OpenSSL with Swift
+This repo uses `libCurl` as a wrapper around the `OpenSSL` code.  Both are written in `C` but `libCurl` has a lot of helpful code to make coding quicker and less error prone.
 
 #### Setup
-A gremlin inside of me likes trying to integrate C code into Swift frontend.  Built a libCurl static library for HTTP requests
+Clone the repo.  Nothing special is required.
 
-`curl https://raw.githubusercontent.com/winster/build-libcurl-ios/master/build_libcurl_dist.sh openssl | bash`
+`libcurl.a` is statically linked to the project.  I will remove it from this repo shortly ( as github is not a place for binary files ).  I used this [site][b171adad] to build `libCurl for iOS`.
 
-Accessed the OpenSSL and libCurl C headers via a Swift Bridging Header file. No Import statements required.
+  [b171adad]: https://github.com/sinofool/build-libcurl-ios "libcurl_build_ios"
+
+The real code is all in `C`, despite you requiring `Swift 5.0` to build.  I use a `Bridging Header` file to allow `Swift` to call `C`.
 
 ####  History
 Removed the OpenSSL-Universal framework as you get OpenSSL statically linked inside of the libCurl binary.

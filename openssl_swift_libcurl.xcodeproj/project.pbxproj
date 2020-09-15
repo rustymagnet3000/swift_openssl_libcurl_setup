@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FA700B12510DF4C0052E5D0 /* YDButtonStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA700B02510DF4C0052E5D0 /* YDButtonStyler.swift */; };
+		0FA700B92510E0F00052E5D0 /* OpenSSLDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA700B82510E0F00052E5D0 /* OpenSSLDemoTests.swift */; };
+		0FA700C02510E12F0052E5D0 /* YDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97058D9D1EFA6F6A00474B2C /* YDDataManager.swift */; };
+		97058D9C1EFA6E6D00474B2C /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97058D9B1EFA6E6D00474B2C /* libcurl.a */; };
+		97058D9E1EFA6F6A00474B2C /* YDDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97058D9D1EFA6F6A00474B2C /* YDDataManager.swift */; };
+		97058DA01EFA983800474B2C /* https_get.c in Sources */ = {isa = PBXBuildFile; fileRef = 97058D9F1EFA983800474B2C /* https_get.c */; };
+		97058DA21EFABA5300474B2C /* https_pinning.c in Sources */ = {isa = PBXBuildFile; fileRef = 97058DA11EFABA5300474B2C /* https_pinning.c */; };
+		971844701EE1A94C000EBDB9 /* YDAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9718446F1EE1A94C000EBDB9 /* YDAppDelegate.swift */; };
+		971844721EE1A94C000EBDB9 /* YDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971844711EE1A94C000EBDB9 /* YDViewController.swift */; };
+		971844751EE1A94C000EBDB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971844731EE1A94C000EBDB9 /* Main.storyboard */; };
+		971844771EE1A94C000EBDB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971844761EE1A94C000EBDB9 /* Assets.xcassets */; };
+		9718447A1EE1A94C000EBDB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971844781EE1A94C000EBDB9 /* LaunchScreen.storyboard */; };
+		979474191EE5A83F00B7062D /* basic_get.c in Sources */ = {isa = PBXBuildFile; fileRef = 979474171EE5A83F00B7062D /* basic_get.c */; };
+		97C9545F1F06A08D00E08791 /* YDSecretVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9545E1F06A08D00E08791 /* YDSecretVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA700BB2510E0F00052E5D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 971844641EE1A94C000EBDB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9718446B1EE1A94C000EBDB9;
+			remoteInfo = openssl_swift_bypass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FA700B02510DF4C0052E5D0 /* YDButtonStyler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDButtonStyler.swift; sourceTree = "<group>"; };
+		0FA700B62510E0F00052E5D0 /* OpenSSLDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSSLDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA700B82510E0F00052E5D0 /* OpenSSLDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSSLDemoTests.swift; sourceTree = "<group>"; };
+		0FA700BA2510E0F00052E5D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97058D901EFA6E6D00474B2C /* curl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		97058D911EFA6E6D00474B2C /* curlbuild.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlbuild.h; sourceTree = "<group>"; };
+		97058D921EFA6E6D00474B2C /* curlrules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlrules.h; sourceTree = "<group>"; };
+		97058D931EFA6E6D00474B2C /* curlver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		97058D941EFA6E6D00474B2C /* easy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		97058D951EFA6E6D00474B2C /* mprintf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		97058D961EFA6E6D00474B2C /* multi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		97058D971EFA6E6D00474B2C /* stdcheaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		97058D981EFA6E6D00474B2C /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		97058D991EFA6E6D00474B2C /* typecheck-gcc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		97058D9B1EFA6E6D00474B2C /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		97058D9D1EFA6F6A00474B2C /* YDDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDDataManager.swift; sourceTree = "<group>"; };
+		97058D9F1EFA983800474B2C /* https_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = https_get.c; sourceTree = "<group>"; };
+		97058DA11EFABA5300474B2C /* https_pinning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = https_pinning.c; sourceTree = "<group>"; };
+		9718446C1EE1A94C000EBDB9 /* OpenSSL Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenSSL Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9718446F1EE1A94C000EBDB9 /* YDAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDAppDelegate.swift; sourceTree = "<group>"; };
+		971844711EE1A94C000EBDB9 /* YDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDViewController.swift; sourceTree = "<group>"; };
+		971844741EE1A94C000EBDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		971844761EE1A94C000EBDB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		971844791EE1A94C000EBDB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9718447B1EE1A94C000EBDB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971844841EE1AB90000EBDB9 /* openssl_swift_bypass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openssl_swift_bypass-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		979474171EE5A83F00B7062D /* basic_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = basic_get.c; sourceTree = "<group>"; };
+		979474181EE5A83F00B7062D /* interface_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interface_header.h; sourceTree = "<group>"; };
+		97C9545E1F06A08D00E08791 /* YDSecretVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YDSecretVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA700B32510E0F00052E5D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971844691EE1A94C000EBDB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97058D9C1EFA6E6D00474B2C /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA700B72510E0F00052E5D0 /* OpenSSLDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FA700B82510E0F00052E5D0 /* OpenSSLDemoTests.swift */,
+				0FA700BA2510E0F00052E5D0 /* Info.plist */,
+			);
+			path = OpenSSLDemoTests;
+			sourceTree = "<group>";
+		};
+		763C78CA3A83F55C3B39C10A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97058D8D1EFA6E6D00474B2C /* libcurl-ios-dist */ = {
+			isa = PBXGroup;
+			children = (
+				97058D8E1EFA6E6D00474B2C /* include */,
+				97058D9A1EFA6E6D00474B2C /* lib */,
+			);
+			path = "libcurl-ios-dist";
+			sourceTree = "<group>";
+		};
+		97058D8E1EFA6E6D00474B2C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				97058D8F1EFA6E6D00474B2C /* curl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		97058D8F1EFA6E6D00474B2C /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				97058D901EFA6E6D00474B2C /* curl.h */,
+				97058D911EFA6E6D00474B2C /* curlbuild.h */,
+				97058D921EFA6E6D00474B2C /* curlrules.h */,
+				97058D931EFA6E6D00474B2C /* curlver.h */,
+				97058D941EFA6E6D00474B2C /* easy.h */,
+				97058D951EFA6E6D00474B2C /* mprintf.h */,
+				97058D961EFA6E6D00474B2C /* multi.h */,
+				97058D971EFA6E6D00474B2C /* stdcheaders.h */,
+				97058D981EFA6E6D00474B2C /* system.h */,
+				97058D991EFA6E6D00474B2C /* typecheck-gcc.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		97058D9A1EFA6E6D00474B2C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				97058D9B1EFA6E6D00474B2C /* libcurl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		971844631EE1A94C000EBDB9 = {
+			isa = PBXGroup;
+			children = (
+				9718446E1EE1A94C000EBDB9 /* Code */,
+				0FA700B72510E0F00052E5D0 /* OpenSSLDemoTests */,
+				9718446D1EE1A94C000EBDB9 /* Products */,
+				763C78CA3A83F55C3B39C10A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9718446D1EE1A94C000EBDB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9718446C1EE1A94C000EBDB9 /* OpenSSL Demo.app */,
+				0FA700B62510E0F00052E5D0 /* OpenSSLDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9718446E1EE1A94C000EBDB9 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				97058D8D1EFA6E6D00474B2C /* libcurl-ios-dist */,
+				979474001EE594A300B7062D /* Swift */,
+				9794741A1EE5A84500B7062D /* C_libcurl_GET */,
+				971844761EE1A94C000EBDB9 /* Assets.xcassets */,
+				971844731EE1A94C000EBDB9 /* Main.storyboard */,
+				971844781EE1A94C000EBDB9 /* LaunchScreen.storyboard */,
+				971844841EE1AB90000EBDB9 /* openssl_swift_bypass-Bridging-Header.h */,
+				9718447B1EE1A94C000EBDB9 /* Info.plist */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		979474001EE594A300B7062D /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				9718446F1EE1A94C000EBDB9 /* YDAppDelegate.swift */,
+				971844711EE1A94C000EBDB9 /* YDViewController.swift */,
+				97C9545E1F06A08D00E08791 /* YDSecretVC.swift */,
+				0FA700B02510DF4C0052E5D0 /* YDButtonStyler.swift */,
+				97058D9D1EFA6F6A00474B2C /* YDDataManager.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		9794741A1EE5A84500B7062D /* C_libcurl_GET */ = {
+			isa = PBXGroup;
+			children = (
+				979474171EE5A83F00B7062D /* basic_get.c */,
+				97058D9F1EFA983800474B2C /* https_get.c */,
+				97058DA11EFABA5300474B2C /* https_pinning.c */,
+				979474181EE5A83F00B7062D /* interface_header.h */,
+			);
+			name = C_libcurl_GET;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FA700B52510E0F00052E5D0 /* OpenSSLDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA700BD2510E0F00052E5D0 /* Build configuration list for PBXNativeTarget "OpenSSLDemoTests" */;
+			buildPhases = (
+				0FA700B22510E0F00052E5D0 /* Sources */,
+				0FA700B32510E0F00052E5D0 /* Frameworks */,
+				0FA700B42510E0F00052E5D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FA700BC2510E0F00052E5D0 /* PBXTargetDependency */,
+			);
+			name = OpenSSLDemoTests;
+			productName = OpenSSLDemoTests;
+			productReference = 0FA700B62510E0F00052E5D0 /* OpenSSLDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9718446B1EE1A94C000EBDB9 /* openssl_swift_libcurl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9718447E1EE1A94C000EBDB9 /* Build configuration list for PBXNativeTarget "openssl_swift_libcurl" */;
+			buildPhases = (
+				971844681EE1A94C000EBDB9 /* Sources */,
+				971844691EE1A94C000EBDB9 /* Frameworks */,
+				9718446A1EE1A94C000EBDB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openssl_swift_libcurl;
+			productName = openssl_swift_bypass;
+			productReference = 9718446C1EE1A94C000EBDB9 /* OpenSSL Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		971844641EE1A94C000EBDB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = youdog;
+				TargetAttributes = {
+					0FA700B52510E0F00052E5D0 = {
+						CreatedOnToolsVersion = 11.6;
+						DevelopmentTeam = U8MSEX235L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9718446B1EE1A94C000EBDB9;
+					};
+					9718446B1EE1A94C000EBDB9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 2N3CU4HVH8;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 971844671EE1A94C000EBDB9 /* Build configuration list for PBXProject "openssl_swift_libcurl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 971844631EE1A94C000EBDB9;
+			productRefGroup = 9718446D1EE1A94C000EBDB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9718446B1EE1A94C000EBDB9 /* openssl_swift_libcurl */,
+				0FA700B52510E0F00052E5D0 /* OpenSSLDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FA700B42510E0F00052E5D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9718446A1EE1A94C000EBDB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9718447A1EE1A94C000EBDB9 /* LaunchScreen.storyboard in Resources */,
+				971844771EE1A94C000EBDB9 /* Assets.xcassets in Resources */,
+				971844751EE1A94C000EBDB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FA700B22510E0F00052E5D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA700C02510E12F0052E5D0 /* YDDataManager.swift in Sources */,
+				0FA700B92510E0F00052E5D0 /* OpenSSLDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971844681EE1A94C000EBDB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979474191EE5A83F00B7062D /* basic_get.c in Sources */,
+				971844721EE1A94C000EBDB9 /* YDViewController.swift in Sources */,
+				971844701EE1A94C000EBDB9 /* YDAppDelegate.swift in Sources */,
+				97058DA21EFABA5300474B2C /* https_pinning.c in Sources */,
+				0FA700B12510DF4C0052E5D0 /* YDButtonStyler.swift in Sources */,
+				97058D9E1EFA6F6A00474B2C /* YDDataManager.swift in Sources */,
+				97058DA01EFA983800474B2C /* https_get.c in Sources */,
+				97C9545F1F06A08D00E08791 /* YDSecretVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FA700BC2510E0F00052E5D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9718446B1EE1A94C000EBDB9 /* openssl_swift_libcurl */;
+			targetProxy = 0FA700BB2510E0F00052E5D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		971844731EE1A94C000EBDB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971844741EE1A94C000EBDB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		971844781EE1A94C000EBDB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971844791EE1A94C000EBDB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FA700BE2510E0F00052E5D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8MSEX235L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OpenSSLDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = youdog.com.rusty.OpenSSLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSSL Demo.app/OpenSSL Demo";
+			};
+			name = Debug;
+		};
+		0FA700BF2510E0F00052E5D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8MSEX235L;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OpenSSLDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = youdog.com.rusty.OpenSSLDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSSL Demo.app/OpenSSL Demo";
+			};
+			name = Release;
+		};
+		9718447C1EE1A94C000EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert Youdale (U8MSEX235L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U8MSEX235L;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2e0eb619-b2d7-4ca7-a853-4b6067a1bfdc";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9718447D1EE1A94C000EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert Youdale (U8MSEX235L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = U8MSEX235L;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "2e0eb619-b2d7-4ca7-a853-4b6067a1bfdc";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9718447F1EE1A94C000EBDB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert Youdale (U8MSEX235L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2N3CU4HVH8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = Code/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youdog.openssl-swift-bypass";
+				PRODUCT_NAME = "OpenSSL Demo";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "openssl_swift_bypass-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		971844801EE1A94C000EBDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert Youdale (U8MSEX235L)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2N3CU4HVH8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				INFOPLIST_FILE = Code/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/**",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youdog.openssl-swift-bypass";
+				PRODUCT_NAME = "OpenSSL Demo";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "openssl_swift_bypass-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FA700BD2510E0F00052E5D0 /* Build configuration list for PBXNativeTarget "OpenSSLDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA700BE2510E0F00052E5D0 /* Debug */,
+				0FA700BF2510E0F00052E5D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971844671EE1A94C000EBDB9 /* Build configuration list for PBXProject "openssl_swift_libcurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9718447C1EE1A94C000EBDB9 /* Debug */,
+				9718447D1EE1A94C000EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9718447E1EE1A94C000EBDB9 /* Build configuration list for PBXNativeTarget "openssl_swift_libcurl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9718447F1EE1A94C000EBDB9 /* Debug */,
+				971844801EE1A94C000EBDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 971844641EE1A94C000EBDB9 /* Project object */;
+}
